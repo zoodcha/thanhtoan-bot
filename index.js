@@ -31,8 +31,8 @@ const ROLE_ID = "1076385318263062609";
 
 // Thông tin ngân hàng
 const BANK_NAME = "MB Bank";
-const BANK_ACCOUNT = "150320071111";
-const BANK_OWNER = "LE KY QUANG MINH";
+const BANK_ACCOUNT = "0828083618";
+const BANK_OWNER = "VU PHAM QUANG HUY";
 // ===============================================
 
 const client = new Client({
@@ -116,7 +116,7 @@ client.on("interactionCreate", async (interaction) => {
     const addInfo = encodeURIComponent(product);
 
     const vietqrUrl =
-  `https://img.vietqr.io/image/MB-150320071111-compact2.png` +
+  `https://img.vietqr.io/image/MB-0828083618-compact2.png` +
   `?amount=${price}&addInfo=${encodeURIComponent(product)}`;
 
     const paymentEmbed = new EmbedBuilder()
